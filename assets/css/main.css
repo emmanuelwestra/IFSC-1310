@@ -1,41 +1,5 @@
 body {
     font-family: "Times New Roman", "Georgia", "Times", "serif";
-}
-
-#nav-bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    top: 5px;
-    width: fill;
-}
-
-#nav-bar li {
-    float: left;
-}
-
-#nav-bar li a {
-    padding: 8px;
-    background-color: #f0f0f0;
-}
-
-#nav-bar li a:hover {   
-    background-color: #e8e8e8;
-}
-
-#top {
-    color: #6E2639;
-}
-
-#copyright-footer {
-    font-size: 15px;
-}
-
-th {
-    text-align: left;
-}
-
-caption {
-    text-decoration: underline;
+    background-color: lightblue;
+    cursor: none;
 }

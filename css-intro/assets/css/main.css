@@ -1,0 +1,29 @@
+/* ---- CSS Demo ---- */
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  /*  --------------- Global Styles -----------------  */
+  
+  body{
+  font-family: "Gabarito", sans-serif;
+  }
+  
+  header.primary{
+  background-color: #283040;
+  }
+  
+  
+  
+  
+  
+  
