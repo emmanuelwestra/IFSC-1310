@@ -10,7 +10,13 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  
+
+  /*  --------------- Responsive Images -----------------  */
+
+  img {
+    max-width: 100%;
+  }
+
   /*  --------------- Utility Classes -----------------  */
 
 .container {
@@ -95,7 +101,51 @@ html {
   }
 
   #blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    
+  }
 
+  #blog h2 {
+    display: block;
+  }
+
+  #blog .post {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    transition: 250ms linear;
+  }
+
+  #blog .post:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
+  }
+
+  #blog figure {
+    margin: 0;
+  }
+
+  #blog figcaption {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #c8c8c8;
+    margin-bottom: 10px;
+  }
+
+  #blog header {
+    font-size: 0.8rem;
+  }
+
+  #blog header h2 {
+    margin: 5px 0;
+  }
+
+  #blog a {
+    color: #005678;
   }
 
 /* ---------------  Media Queries --------------- */
