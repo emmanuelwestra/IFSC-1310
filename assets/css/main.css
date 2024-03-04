@@ -1,5 +1,5 @@
 body {
     font-family: "Times New Roman", "Georgia", "Times", "serif";
-    background-color: lightblue;
-    cursor: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
