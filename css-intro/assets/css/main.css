@@ -53,6 +53,7 @@ html {
   body{
     font-family: "roboto-thin", sans-serif;
     margin: 0;
+    background: no-repeat center/100% url("../img/Cat.jpg");
   }
   
   header.primary{
@@ -102,7 +103,7 @@ html {
     padding: 5px;
     border-radius: 15px;
     border: thin solid #ffffff;
-    transition: 0.4s;
+    transition: 400m;
   }
 
   header.primary nav a:hover {

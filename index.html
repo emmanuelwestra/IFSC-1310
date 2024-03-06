@@ -10,17 +10,35 @@
 
   <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Emmanuel Westra</h1>
-  <nav>
-    <ul>
-      <li><a href="prototype/index.html" target="_blank">Prototype</a></li>
-      <li><a href="css-intro/index.html" target="_blank">CSS Intro</a></li>
-      <li><a href="assets/img/css-diner.png" target="_blank">CSS Diner</a></li>
-      <li><a href="assets/img/flexbox-froggy.png" target="_blank">Flexbox Froggy</a></li>
-    </ul>
-  </nav>
+  <main>
+    <header>
+      <h1>Emmanuel Westra</h1>
+    </header>
+    <section id="content" class="container">
+      <h2>Websites</h2>
+      <nav role="websites" class="square-nav">
+        <ul>
+          <li><a href="prototype/index.html" target="_blank">Prototype</a></li>
+          <li><a href="css-intro/index.html" target="_blank">CSS Intro</a></li>
+        </ul>
+      </nav>
+      <h2>Resources</h2>
+      <nav role="resources" class="square-nav">
+        <ul>
+          <li><a href="assets/img/css-diner.png" target="_blank">CSS Diner</a></li>
+          <li><a href="assets/img/flexbox-froggy.png" target="_blank">Flexbox Froggy</a></li>
+        </ul>
+      </nav>
+    </section>
+    <footer>
+      <h6 id="copyright-footer">Copyright ©️ 2024 Emmanuel Westra | All rights reserved | <a href="#top">Back to top</a></h6>
+    </footer>
+  </main>
 </body>
 </html>
