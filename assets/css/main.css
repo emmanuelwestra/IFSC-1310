@@ -173,9 +173,9 @@ footer h6 {
 }
 
 #up-arrow {
-    position: absolute;
+    position: fixed;
     right: 8px;
-    bottom: 8%;
+    bottom: 8px;
     font-size: 2em;
     text-decoration: none;
     color: #333;
