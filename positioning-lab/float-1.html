@@ -27,34 +27,32 @@
     #wrapper {
       background-color: #FFF;
       border: 1px solid #c0c0c0;
-      width: 802px;
+      width: 802px; /* account for border (1px on all sides) */
       margin-right: auto;
       margin-left: auto;
       text-shadow: 2px 2px #000;
+      padding: 20px;
     }
     #navy {
       background-color: #001f3f;
-      float: left;
-      margin: 15px 15px 0 15px;
     }
     #teal {
       background-color: #39CCCC;
-      float: right;
-      margin: 15px 15px 0 0;
     }
     #blue {
       background-color: #0074D9;
-      float: left;
-      margin: 15px;
     }
     #aqua {
       background-color: #7FDBFF;
-      float: right;
-      margin: 15px 15px 15px 0;
     }
-    #navy, #teal, #blue, #aqua {
-      width: 375px;
+    .tile:not(:last-of-type) {
+      width: 370px;
       height: 120px;
+      float: left;
+      margin-bottom: 20px;
+    }
+    .tile:nth-child(2n-1):not(:last-of-type) {
+      margin-right: 20px;
     }
     #footer {
       background-color: #666;
@@ -70,11 +68,11 @@
 <body>
   <h1>Float 1</h1>
   <section id="wrapper">
-    <div id="navy">Navy</div>
-    <div id="teal">Teal</div>
-    <div id="blue">Blue</div>
-    <div id="aqua">Aqua</div>
-    <div id="footer">Footer</div>
+    <div id="navy" class="tile">Navy</div>
+    <div id="teal" class="tile">Teal</div>
+    <div id="blue" class="tile">Blue</div>
+    <div id="aqua" class="tile">Aqua</div>
+    <div id="footer" class="tile">Footer</div>
   </section>
 </body>
 

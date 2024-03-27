@@ -67,6 +67,15 @@ main {
     border-bottom: 1px solid #ddd;
 }
 
+#link-no-style {
+    color: #555;
+    text-decoration: none;
+}
+
+#link-no-style:hover {
+    text-decoration: underline;
+}
+
 #sidebar article {
     grid-area: article;
 }
