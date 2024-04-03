@@ -1,0 +1,66 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*  --------------- Responsive Images -----------------  */
+
+img {
+    max-width: 100%;
+}
+
+/*  --------------- Utility Classes -----------------  */
+
+.container {
+  max-width: 960px;
+  width: 90vw;
+  margin: 40px auto;
+}
+
+.img-left {
+  margin: 10px 20px 10px 0;
+  float: left;
+}
+
+.img-center {
+  margin: 10px;
+  display: block;
+  margin: auto;
+}
+
+.img-right {
+  margin: 10px 0 10px 20px;
+  float: right;
+}
+
+.img-left, .img-center, .img-right {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  border-radius: 20px;
+}
+  
+/*  --------------- Fonts -----------------  */
+
+@font-face {
+    font-family: "TT Interphases Pro";
+    src: "../fonts/tt-interphases-pro/TT Interphases Pro Mono Trial Regulat.ttf" format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}  
+
+/*  --------------- Global Styles -----------------  */
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: "TT Interphases Pro", "Open Sans", Arial;
+    line-height: 1.2rem;
+}
+
+.circle {
+    position: absolute;
+    border: solid 4px #ccc;
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%;  
+}

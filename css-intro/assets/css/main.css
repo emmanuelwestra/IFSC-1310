@@ -12,13 +12,13 @@ html {
     box-sizing: inherit;
   }
 
-  /*  --------------- Responsive Images -----------------  */
+/*  --------------- Responsive Images -----------------  */
 
-  img {
-    max-width: 100%;
-  }
+img {
+  max-width: 100%;
+}
 
-  /*  --------------- Utility Classes -----------------  */
+/*  --------------- Utility Classes -----------------  */
 
 .container {
   max-width: 960px;
