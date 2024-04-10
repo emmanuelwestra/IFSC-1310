@@ -9,6 +9,8 @@
 
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -17,8 +19,7 @@
     </head>
     <body>
         <main>
-            <header>
-                <nav role="navigation">   
+                <nav role="navigation" id="#top">   
                     <ul>
                         <li><a href="#"><div id="logo-wrapper"></div><img src="assets/img/SpaceX-Logo.png" alt="SpaceX" id="logo"></a></div></li>
                         <li><a href="#">Home</a></li>
@@ -27,8 +28,11 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
+            <header id="hero">
+                <h1>Dragon</h1>
+                <p>Sending Humans and Cargo into Space</p>
             </header>
-            <section id="content">
+            <section class="content">
                 <h2>Dragon Vehicle Overview</h2>
                     <p>Dragon is a free-flying spacecraft designed to deliver both cargo and people to orbiting destinations. Dragon made history in 2012 when it became the first commercial spacecraft in history to deliver cargo to the International Space Station and safely return cargo to Earth, a feat previously achieved only by governments. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth. Currently Dragon carries cargo to space, but it was designed from the beginning to carry humans. Under an agreement with NASA, SpaceX is now developing the refinements that will enable Dragon to fly crew. Dragon's first manned test flight is expected to take place as early as 2018.</p>
                 <h2>Configurations</h2>
@@ -50,16 +54,26 @@
                 </ul>
             </section>
             <footer>
-                <header>
+                <section id="social">
+                    <header>
+                        <ul>
+                            <li><h2>Follow SpaceX</h2></li>
+                            <li><a href="https://www.facebook.com/" target="_blank"><div class="fab fa-facebook-f" aria-label="Facebook"></div></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><div class="fab fa-instagram" aria-label="Instagram"></div></a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank"><div class="fab fa-youtube" aria-label="YouTube"></div></a></li>
+                            <li><a href="https://www.linkedin.com/" target="_blank"><div class="fab fa-linkedin-in" aria-label="LinkedIn"></div></a></li>
+                        </ul>
+                    </header>
+                </section>
                 <nav role="navigation-footer">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="history.html">History</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#top">Return to top</a></li>
                     </ul>
                 </nav>
-                </header>
             </footer>
         </main>
         <div id="cursor" class="cursor"></div> <!-- Circle to follow cursor -->

@@ -6,7 +6,7 @@ jQuery(document).ready(function() {
      
     $(document).mousemove(function(e){
       mouseX = e.pageX - 20;
-      mouseY = e.pageY - 40; 
+      mouseY = e.pageY - 20; 
     });
       
     setInterval(function(){

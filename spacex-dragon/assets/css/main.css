@@ -1,5 +1,6 @@
 *, *:before, *:after {
     box-sizing: inherit;
+    scroll-behavior: smooth;
 }
 
 /*  --------------- Responsive Images -----------------  */
@@ -40,67 +41,180 @@ img {
   
 /*  --------------- Fonts -----------------  */
 
+/* VARIABLE */
+
 @font-face {
-    font-family: "TT Interphases Pro";
-    src: "../fonts/tt-interphases-pro/TT Interphases Pro Mono Trial Regulat.ttf" format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}  
+  font-family: "TT Interphases Pro";
+  src: "../fonts/tt-interphases-pro/TT Interphases Pro Mono Trial Variable.ttf" format("truetype");
+  font-weight: bold;
+  font-style: italicized;
+  font-stretch: condensed;
+}
 
 /*  --------------- Global Styles -----------------  */
 
 body {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    scroll-behavior: smooth;
     font-family: "TT Interphases Pro", "Open Sans", Arial;
     line-height: 1.2rem;
+    margin: 0;
+    padding: 0;
+    background-color: #e3e8ef;
 }
 
+/* Circle that follows the cursor */
 .cursor {
     position: absolute;
     width: 40px; 
     height: 40px; 
-    border-radius: 50%;
-    mix-blend-mode: difference;
-    background-color: #aaa;
+    border-radius: 50%; 
+    mix-blend-mode: multiply;
+    background-color: #1616c4;
     opacity: 0.25;
     z-index: 1000;
     transition: all 50ms ease-in-out;
     pointer-events: none;
 }
 
+/* Styling for the ul */
 nav[role='navigation'] ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: right;
+  gap: 50px;
   align-items: center;
-  width: 80%;
-  height: 50px;
-  margin: 15px 0 0 0;
+  width: 95%;
+  height: 40px;
+  margin: 15px auto;
+  background-color:#1616c4;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+/* Specific styling for the first li element */
+nav[role='navigation'] ul li:first-of-type {
+  margin-right: auto;
+  border: 2px solid #ffffff;
+  transition: 250ms ease-in-out;
+}
+
+nav[role='navigation'] ul li:first-of-type:hover {
+  border: 3px solid #3838ff;
+}
+
+/* Styling for links within li elements */
+nav[role='navigation'] ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #eeeeee;
+  font-weight: bold;
+}
+
+nav[role='navigation'] ul li a:hover {
+  text-decoration: underline;
+}
+
+/* SpaceX logo img styling */
+#logo {
+  width: auto;
+  height: 30px;
+}
+
+/* Div wrapper for logo */
+#logo-wrapper {
+  padding-right: 20%;
+}
+
+nav[role='navigation-footer'] ul, #social ul {
+  list-style-type: none;
   padding: 0;
 }
 
-nav[role='navigation'] ul li {
-  font-size: 20px;
+nav[role='navigation-footer'] ul li a, #social ul li a {
   text-decoration: none;
-  padding: 15px;
-  border-radius: 10px;
-  
 }
 
-nav[role='navgiation'] ul li:empty {
-  background-color: #222222;
+.content {
+  width: 95%;
+  margin: auto;
 }
 
-#logo {
-  width: auto;
-  height: 40px;
+#hero {
+  background-image: url("../img/dragon_featured.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-#logo-wrapper {
-  padding-right: 20%;
+#hero h1, #hero p {
+  color: white;
+  text-transform: uppercase;
+}
+
+#hero h1 {
+  font-size: 6em;
+}
+
+#hero p {
+  font-weight: bold;
+  font-stretch: condensed;
+}
+
+#social {
+  background-color: #1616c4;
+  width: 100%;
+  padding: 10px;
+}
+
+#social h2 {
+ text-align: center; 
+ color: white;
+}
+
+#social ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+#social ul li {
+  margin: 0;
+}
+
+#social h2 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+#social ul li a div {
+  color: white;
+  font-size: 1.2rem;
+}
+
+nav[role="navigation-footer"] {
+  background-color: #04051c;
+}
+
+nav[role="navigation-footer"] ul {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 40px;
+  margin: 0;
+  padding: 10px;
+}
+
+nav[role="navigation-footer"] ul li a {
+  color: white;
+  font-weight: bold;
+}
+
+nav[role="navigation-footer"] ul li a:hover {
+  text-decoration: underline;
 }
