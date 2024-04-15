@@ -16,3 +16,24 @@ jQuery(document).ready(function() {
     }, 20);
   
   });
+
+  function animateCounter(id, start, end, duration) {
+    let obj = document.getElementById(id);
+    let current = start;
+    let range = end - start;
+    let increment = end > start ? 1 : -1;
+    let step = Math.abs(Math.floor(duration / range));
+    let timer = setInterval(() => {
+        current += increment;
+        obj.textContent = current;
+        if (current == end) {
+            clearInterval(timer);
+        }
+    }, step);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    animateCounter('num-46', 0, 46, 2300);
+    animateCounter('num-41', 0, 41, 2050);
+    animateCounter('num-25', 0, 25, 1250);
+});
