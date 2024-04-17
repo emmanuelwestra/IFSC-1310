@@ -64,6 +64,7 @@ img {
   --medium-screen: 768px;
   --large-screen: 1024px;
   --nav-height: 60px;
+  --transition: all 0.2s ease;
 }
   
 /*  --------------- Fonts -----------------  */
@@ -242,6 +243,7 @@ nav[role='navigation'] ul li a:hover {
 
 .stats {
   background-color: var(--black-color);
+  margin: 0;
   padding: 0;
 }
 
@@ -249,7 +251,7 @@ nav[role='navigation'] ul li a:hover {
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 1em;
+  padding: 1.2em 1em 1em;
 }
 
 .stats ul li {
@@ -260,7 +262,7 @@ nav[role='navigation'] ul li a:hover {
 .stats ul li span {
   font-size: 4rem;
   letter-spacing: 1.1rem;
-  font-weight: medium;
+  font-weight: bold;
   text-align: center;
   -webkit-animation: scrolling-left1 20s linear infinite;
   animation: scrolling-left1 20s linear infinite;
@@ -269,6 +271,7 @@ nav[role='navigation'] ul li a:hover {
 .stats ul li h6 {
   text-align: left;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .overview {
@@ -302,6 +305,43 @@ nav[role='navigation'] ul li a:hover {
 .overview div p {
   font-size: 1.2rem;
   line-height: 1.5rem;  
+}
+
+.container{
+  margin: 0 auto;
+}
+
+.faq_header-title{
+  font-size: 24px;
+  color: var(--extra-dark-blue);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.faq__panel {
+  background-color: rgba(255, 255, 255, .34);
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: .7rem;
+  padding: 1rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.faq_panel:last-of-type {
+  margin-bottom: 0;
+}
+
+.faq__label{
+  padding-block: 7px;
+  color: var(--blue-theme);
+  cursor: pointer;
+}
+
+.faq__panel-answer{
+  color: var(--extra-dark-blue);
+  padding-top: 5px;
+  padding-bottom: 7px;
 }
 
 .main-area {
@@ -412,21 +452,37 @@ nav[role="navigation-footer"] ul li a:hover {
   color: var(--white-color);
 }
 
-/* Customized for other pages */
-#hero-section-history {
-  background-image: url("../img/dragon_humans.jpg");
+/* ---------- Customized for non-landing pages ---------- */
+#hero-section-history, #hero-section-faq {
   height: 80vh;
-  border-bottom: 1em solid var(--white-color);
-  /* */
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: var(--nav-height);
 }
 
-#hero-section-history h1, #hero-section-history p {
+#hero-section-history {
+  background-image: url("../img/dragon_humans.jpg");
+}
+
+#hero-section-faq {
+  background-image: url('../img/space_rainbow.jpg');
+}
+
+#hero-section-history h1, #hero-section-history p, #hero-section-faq h1, #hero-section-faq p{
   mix-blend-mode: difference;
+}
+
+#stats-dark {
+  background-color: var(--extra-dark-blue);
+}
+
+#stats-dark ul li {
+  color: var(--white-color);
+}
+
+#stats-light {
+  background-color: var(--white-color);
+}
+
+#stats-light ul li {
+  color: var(--extra-dark-blue);
 }
 
 #main-area-history {
@@ -454,7 +510,7 @@ table td:nth-child(even) {
   text-align: right;
 }
 
-/* Adjustments for medium screens (tablets) */
+/* ---------- Adjustments for medium screens (tablets) ---------- */
 @media (max-width: 768px) {
   .hamburger {
     display: block; /* Show hamburger menu on tablets and below */
@@ -483,7 +539,7 @@ table td:nth-child(even) {
 
 }
 
-/* Adjustments for small screens (phones) */
+/* ---------- Adjustments for small screens (phones) ---------- */
 @media (max-width: 480px) {
   .hamburger {
     display: block; /* Show hamburger menu on tablets and below */
