@@ -233,12 +233,14 @@ nav[role='navigation'] ul li a:hover {
 
 .hero-section h1 {
   font-size: clamp(4em, 10vw, 6em);
+  text-align: center;
 }
 
 .hero-section p {
   font-size: clamp(0.8em, 1.5vw, 4em);
   font-weight: semibold;
   font-stretch: condensed;
+  text-align: center;
 }
 
 .stats {
@@ -309,6 +311,7 @@ nav[role='navigation'] ul li a:hover {
 
 .container{
   margin: 0 auto;
+  padding: 1em;
 }
 
 .faq_header-title{
