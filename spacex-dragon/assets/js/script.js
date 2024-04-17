@@ -33,7 +33,27 @@ jQuery(document).ready(function() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Initial animations for counters
     animateCounter('num-46', 0, 46, 2300);
     animateCounter('num-41', 0, 41, 2050);
     animateCounter('num-25', 0, 25, 1250);
+
+    // Selection and mix-blend-mode logic
+    const textElements = document.querySelectorAll('.hero-section h1, .hero-section p');
+
+    function updateBlendMode() {
+        const selection = window.getSelection();
+        // Check if the selection is not empty and is within the text elements
+        textElements.forEach(element => {
+            if (selection.containsNode(element, true)) {
+                // Apply 'normal' blend mode if the selection is within the element
+                element.style.mixBlendMode = 'normal';
+            } else {
+                // Revert to 'difference' blend mode
+                element.style.mixBlendMode = 'difference';
+            }
+        });
+    }
+
+    document.addEventListener('selectionchange', updateBlendMode);
 });

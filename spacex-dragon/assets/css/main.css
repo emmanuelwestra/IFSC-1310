@@ -76,6 +76,7 @@ body {
 ::selection {
   color: var(--black-color);
   background-color: var(--highlight-selection);
+  mix-blend-mode: normal;
 }
 
 /* Circle that follows the cursor */
@@ -182,7 +183,7 @@ nav[role='navigation'] ul li a:hover {
   padding: 20px;
 }
 
-#hero-section {
+.hero-section {
   background-image: url("../img/dragon_featured.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -196,39 +197,39 @@ nav[role='navigation'] ul li a:hover {
   margin-top: var(--nav-height);
 }
 
-#hero-section header {
+.hero-section header {
   color: var(--white-color);
   text-transform: uppercase;
 }
 
-#hero-section h1 {
+.hero-section h1 {
   font-size: clamp(4em, 10vw, 6em);
 }
 
-#hero-section p {
+.hero-section p {
   font-size: clamp(0.8em, 1.5vw, 4em);
   font-weight: semibold;
   font-stretch: condensed;
 }
 
-#stats {
+.stats {
   background-color: var(--black-color);
   padding: 0;
 }
 
-#stats ul {
+.stats ul {
   display: flex;
   justify-content: space-around;
   margin: 0;
   padding: 1em;
 }
 
-#stats ul li {
+.stats ul li {
   color: var(--white-color);
   display: inline-block;
 }
 
-#stats ul li span {
+.stats ul li span {
   font-size: 4rem;
   letter-spacing: 1.1rem;
   font-weight: medium;
@@ -237,7 +238,7 @@ nav[role='navigation'] ul li a:hover {
   animation: scrolling-left1 20s linear infinite;
 }
 
-#stats ul li h6 {
+.stats ul li h6 {
   text-align: left;
   text-transform: uppercase;
 }
@@ -393,13 +394,34 @@ nav[role="navigation-footer"] ul li a:hover {
   color: var(--white-color);
 }
 
+/* Customized for other pages */
+#hero-section-history {
+  background-image: url("../img/dragon_humans.jpg");
+  height: 80vh;
+  border-bottom: 1em solid var(--white-color);
+  /* */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--nav-height);
+}
+
+.hero-section h1, .hero-section p {
+  mix-blend-mode: difference;
+}
+
+.hero-section h1::selection, .hero-section p::selection {
+  mix-blend-mode: normal;
+}
+
 /* Adjustments for medium screens (tablets) */
 @media (max-width: 768px) {
   .hamburger {
     display: block; /* Show hamburger menu on tablets and below */
   }
 
-  #hero {
+  .hero-section {
     height: 60vh;
     gap: 0;
   }
@@ -428,16 +450,16 @@ nav[role="navigation-footer"] ul li a:hover {
     display: block; /* Show hamburger menu on tablets and below */
   }
 
-  #hero {
+  .hero-section {
     height: 40vh;
   }
   
-  #stats ul li span {
+  .stats ul li span {
     font-size: 3rem;
     letter-spacing: 1rem;
   }
 
-  #stats ul li h6 {
+  .stats ul li h6 {
     font-size: 0.6rem;
   }
 
