@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     animateCounter('num-25', 0, 25, 1250);
 
     // Selection and mix-blend-mode logic
-    const textElements = document.querySelectorAll('.hero-section h1, .hero-section p');
+    const textElements = document.querySelectorAll('#hero-section-history h1, #hero-section-history p');
 
     function updateBlendMode() {
         const selection = window.getSelection();

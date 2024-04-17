@@ -39,6 +39,18 @@ img {
   border-radius: 20px;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.lowercase {
+  text-decoration: lowercase;
+}
+
 /*  --------------- Color Theme -----------------  */
 
 :root {
@@ -107,6 +119,21 @@ a:hover {
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+table td, table th {
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--white-color);
+  padding: 10px;
+}
+
+table th {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+table td {
+  text-align: right;
 }
 
 /*  --------------- Web Content -----------------  */
@@ -184,6 +211,7 @@ nav[role='navigation'] ul li a:hover {
 }
 
 .hero-section {
+  background-color: var(--black-color); /* Black background as fallback */
   background-image: url("../img/dragon_featured.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -243,7 +271,7 @@ nav[role='navigation'] ul li a:hover {
   text-transform: uppercase;
 }
 
-#overview {
+.overview {
   background-image: url("../img/dragon_2_hover_test.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -253,7 +281,7 @@ nav[role='navigation'] ul li a:hover {
   position: relative;
 }
 
-#overview div {
+.overview div {
   background-color: rgba(250, 250, 250, 0.5);
   width: 100%;
   height: 100%;
@@ -263,27 +291,27 @@ nav[role='navigation'] ul li a:hover {
   align-items: center;
 }
 
-#overview div * {
+.overview div * {
   width: 50%;
 }
 
-#overview div h2 {
+.overview div h2 {
   font-size: 2rem;
 }
 
-#overview div p {
+.overview div p {
   font-size: 1.2rem;
   line-height: 1.5rem;  
 }
 
-#main-area {
+.main-area {
   padding: 1em;
   display: flex;
   justify-content: center;
   gap: 2em;
 } 
 
-#main-area article {
+.main-area article {
   background-color: rgba(255, 255, 255, .34);
   border: 1px solid rgba(255, 255, 255, .5);
   min-height: 100px;
@@ -294,7 +322,7 @@ nav[role='navigation'] ul li a:hover {
   flex: 1;
 }
 
-#main-area ul li {
+.main-area ul li {
   min-height: 50px;
   background-color: rgba(255, 255, 255, .34);
   border: 1px solid rgba(255, 255, 255, .5);
@@ -304,7 +332,7 @@ nav[role='navigation'] ul li a:hover {
   margin-bottom: 1em;
 }
 
-#main-area ul li:last-child {
+.main-area ul li:last-child {
   margin-bottom: 0;
 }
 
@@ -314,16 +342,6 @@ aside[role="complementary"] {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-}
-
-aside[role="complementary"] table td {
-  font-size: 0.8rem;
-  border-bottom: 1px solid var(--white-color);
-  padding: 10px;
-}
-
-aside[role="complementary"] table td:nth-child(even) {
-  text-align: right;
 }
 
 aside[role="complementary"] article {
@@ -407,12 +425,33 @@ nav[role="navigation-footer"] ul li a:hover {
   margin-top: var(--nav-height);
 }
 
-.hero-section h1, .hero-section p {
+#hero-section-history h1, #hero-section-history p {
   mix-blend-mode: difference;
 }
 
-.hero-section h1::selection, .hero-section p::selection {
-  mix-blend-mode: normal;
+#main-area-history {
+  flex-direction: column;
+}
+
+#main-area-history table td {
+  text-align: left;
+  border-bottom: 1px solid var(--extra-dark-blue);
+  min-width: 15vw;
+}
+
+#main-area-history thead td {
+  font-weight: bold;
+  border-bottom: 2px solid var(--extra-dark-blue);
+}
+
+table td {
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--white-color);
+  padding: 10px;
+}
+
+table td:nth-child(even) {
+  text-align: right;
 }
 
 /* Adjustments for medium screens (tablets) */
