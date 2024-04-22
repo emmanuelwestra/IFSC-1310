@@ -1,5 +1,6 @@
 *, *:before, *:after {
     box-sizing: inherit;
+    scroll-behavior: smooth;
 }
 
 /*  --------------- Responsive Images -----------------  */
@@ -42,7 +43,6 @@ img {
 body {
     font-family: "Inter", "Times New Roman", "Georgia", "Times", "serif";
     box-sizing: border-box;
-    scroll-behavior: smooth;
     min-height: 100vh;
 }
 
@@ -104,11 +104,11 @@ aside h6 {
     margin: 0;
 }
 
-.square-nav {
+.square-style {
    margin: 0;
 }
 
-.square-nav ul {
+.square-style ul {
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -116,11 +116,11 @@ aside h6 {
     gap: 1em;
 }
 
-.square-nav li {
+.square-style li {
     list-style-type: none;
 }
 
-.square-nav a {
+.square-style a, .square-item {
     color: #474747;
     text-decoration: none;
     background-color: #f0f0f0;
@@ -130,12 +130,18 @@ aside h6 {
     transition: 500ms;
 }
 
-.square-nav a:hover {
+.square-item {
+    font-size: 1rem;
+    margin: 0;
+    width: fit-content;
+}
+
+.square-style a:hover {
     color: #000000;
     text-decoration: underline;
 }
 
-.square-nav h3 {
+.square-style h3 {
     font-weight: 500;
 }
 
@@ -146,12 +152,14 @@ aside h6 {
     margin: 0;
 }
 
+/* ---------- footer ---------- */
+
 footer {
     grid-area: footer;
     font-size: 1.5rem;
     text-align: center;
     border-top: 1px solid #ddd;
-    background-image: url("assets/img/Grundge.webp");
+    background-image: url("assets/img/grundge.webp");
 }
 
 footer ul {
