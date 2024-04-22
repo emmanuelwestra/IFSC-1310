@@ -14,8 +14,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="assets/js/script.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+        <script src="assets/js/script.js" type="text/javascript" defer></script>
     </head>
     <body>
         <main>
@@ -61,7 +61,7 @@
                         <p>Dragon is a free-flying spacecraft designed to deliver both cargo and people to orbiting destinations. Dragon made history in 2012 when it became the first commercial spacecraft in history to deliver cargo to the International Space Station and safely return cargo to Earth, a feat previously achieved only by governments. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth. Currently Dragon carries cargo to space, but it was designed from the beginning to carry humans. Under an agreement with NASA, SpaceX is now developing the refinements that will enable Dragon to fly crew. Dragon's first manned test flight is expected to take place as early as 2018.</p>
                     </div>
                 </section>
-                <section id="main-area">
+                <section class="main-area">
                     <article>
                         <h4>Configurations<br />–</h4>
                         <ul>
@@ -86,46 +86,48 @@
                         </ul>
                     </article>
                 </section>
-                <aside role="complementary">
-                    <article>
-                        <header>
-                            <h3>Background</h3>
-                            <p>SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets.</p>
-                            <p>The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth, and is the first private spacecraft to take humans to the space station.</p>
-                        </header>
-                    </article>
-                    <article>
-                        <header>
-                            <h3>Dragon Overview</h3>
-                        </header>
-                        <table>
-                            <tr>
-                                <th>HEIGHT</td>
-                                <td>8.1 m / 26.7 ft</td>
-                            </tr>
-                            <tr>
-                                <th>DIAMETER</td>
-                                <td>4 m / 13 ft</td>
-                            </tr>
-                            <tr>
-                                <th>CAPSULE VOLUME</td>
-                                <td>4 m / 13 ft</td>
-                            </tr>
-                            <tr>
-                                <th>TRUNK VOLUME</td>
-                                <td>9.3 m³ / 328 ft³</td>
-                            </tr>
-                            <tr>
-                                <th>LAUNCH PAYLOAD CAPACITY</td>
-                                <td>6,000 kg / 13,228 lbs</td>
-                            </tr>
-                            <tr>
-                                <th>RETURN PAYLOAD CAPACITY</td>
-                                <td>3,000 kg / 6,614 lbs</td>
-                            </tr>
-                        </table>
-                    </article>
-                </aside>
+                <div class="detail-component">
+                    <aside role="complementary">
+                        <article>
+                            <header>
+                                <h3>Background</h3>
+                                <p>SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets.</p>
+                                <p>The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth, and is the first private spacecraft to take humans to the space station.</p>
+                            </header>
+                        </article>
+                        <article>
+                            <header>
+                                <h3>Dragon Specifications</h3>
+                            </header>
+                            <table>
+                                <tr>
+                                    <th>HEIGHT</td>
+                                    <td>8.1 m / 26.7 ft</td>
+                                </tr>
+                                <tr>
+                                    <th>DIAMETER</td>
+                                    <td>4 m / 13 ft</td>
+                                </tr>
+                                <tr>
+                                    <th>CAPSULE VOLUME</td>
+                                    <td>4 m / 13 ft</td>
+                                </tr>
+                                <tr>
+                                    <th>TRUNK VOLUME</td>
+                                    <td>9.3 m³ / 328 ft³</td>
+                                </tr>
+                                <tr>
+                                    <th>LAUNCH PAYLOAD CAPACITY</td>
+                                    <td>6,000 kg / 13,228 lbs</td>
+                                </tr>
+                                <tr>
+                                    <th>RETURN PAYLOAD CAPACITY</td>
+                                    <td>3,000 kg / 6,614 lbs</td>
+                                </tr>
+                            </table>
+                        </article>
+                    </aside>
+                </div>
             </div>
             <footer>
                 <section id="social">
@@ -151,7 +153,11 @@
                     </nav>
                 </section>
                 <section id="end">
-                    <p>SPACEX © 2024 <a href="#">PRIVACY POLICY</a> <a href="">SUPPLIERS</a></p>
+                    <ul>
+                        <li>SPACEX © 2024</li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">SUPPLIERS</a></li>
+                    </ul>
                 </section>
             </footer>
         </main>

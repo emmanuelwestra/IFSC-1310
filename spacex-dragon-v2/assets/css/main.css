@@ -7,6 +7,7 @@
 
 img {
     max-width: 100%;
+    border-radius: 0.7rem;
 }
 
 /*  --------------- Utility Classes -----------------  */
@@ -263,7 +264,7 @@ nav[role='navigation'] ul li a:hover {
 
 .stats ul li span {
   font-size: 4rem;
-  letter-spacing: 1.1rem;
+  letter-spacing: 4px;
   font-weight: bold;
   text-align: center;
   -webkit-animation: scrolling-left1 20s linear infinite;
@@ -324,7 +325,7 @@ nav[role='navigation'] ul li a:hover {
 .faq__panel {
   background-color: rgba(255, 255, 255, .34);
   border: 1px solid rgba(255, 255, 255, .5);
-  border-radius: .7rem;
+  border-radius: 0.7rem;
   padding: 1rem;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -345,6 +346,10 @@ nav[role='navigation'] ul li a:hover {
   color: var(--extra-dark-blue);
   padding-top: 5px;
   padding-bottom: 7px;
+}
+
+.content {
+  padding: 2em;
 }
 
 .main-area {
@@ -369,32 +374,40 @@ nav[role='navigation'] ul li a:hover {
   min-height: 50px;
   background-color: rgba(255, 255, 255, .34);
   border: 1px solid rgba(255, 255, 255, .5);
-  border-radius: .7rem;
-  padding: 1rem;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  border-radius: 0.7rem;
+  padding: 1em;
+  margin: 1em 0;
 }
 
 .main-area ul li:last-child {
   margin-bottom: 0;
 }
 
-aside[role="complementary"] {
-  padding: 3em;
-  background-color: var(--extra-dark-blue);
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+.detail-component {
+  padding: 1em;
 }
 
-aside[role="complementary"] article {
-  width: 40%;
+.detail-component aside {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.detail-component article {
+  width: 30%;
   color: var(--white-color);
+  padding: 2em 4em;
+  background-color: var(--extra-dark-blue);
+  border-radius: 0.7rem;
+}
+
+.detail-component article:last-of-type {
+  width: fit-content;
 }
 
 #social {
   background-color: var(--blue-theme);
-  width: 100%;
   padding: 10px;
 }
 
@@ -445,14 +458,24 @@ nav[role="navigation-footer"] ul li a:hover {
 }
 
 #end {
-  text-align: center;
   background-color: var(--blue-theme);
-  margin: 0;
-  padding: 10px;
 }
 
-#end p, #end a, #end a:hover {
+#end ul {
+  display: flexbox;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 1em;
+  margin: 0;
+}
+
+#end ul li, #end ul li a, #end ul li a:hover {
   color: var(--white-color);
+}
+
+#end ul li a:hover{
+  text-decoration: underliune;
 }
 
 /* ---------- Customized for non-landing pages ---------- */
