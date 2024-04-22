@@ -32,10 +32,10 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <section class="hero-section">
+            <section class="hero-section" id="hero-section-contact">
                 <header>
-                    <h1>Dragon</h1>
-                    <p>Sending Humans and Cargo into Space</p>
+                    <h1>Contact</h1>
+                    <p>Let's start a conversation.</p>
                 </header>
             </section>
             <aside class="stats">
@@ -55,36 +55,61 @@
                 </ul>
             </aside>
             <div class="content">
-                <section class="overview">
-                    <div>
-                        <h2>Dragon Vehicle Overview</h2>
-                        <p>Dragon is a free-flying spacecraft designed to deliver both cargo and people to orbiting destinations. Dragon made history in 2012 when it became the first commercial spacecraft in history to deliver cargo to the International Space Station and safely return cargo to Earth, a feat previously achieved only by governments. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth. Currently Dragon carries cargo to space, but it was designed from the beginning to carry humans. Under an agreement with NASA, SpaceX is now developing the refinements that will enable Dragon to fly crew. Dragon's first manned test flight is expected to take place as early as 2018.</p>
-                    </div>
-                </section>
                 <section clas="main-area">
-                    <article>
-                        <h4>Configurations<br />–</h4>
-                        <ul>
-                            <li><strong>Delivery and Return Services</strong> – Dragon is the first commercial spacecraft to deliver cargo to the International Space Station and currently the only cargo spacecraft flying capable of returning significant amounts of cargo to Earth. Dragon accommodates pressurized cargo in the capsule as well as unpressurized cargo in its trunk.</li>
-                            <li><strong>Versatile Cargo Racks</strong> – The racks are a honeycomb carbon-aluminum construction designed for efficient packing in a zero-gravity environment. They accommodate a variety of standard-size NASA cargo bags as well as freezers for carrying materials such as biological samples.</li>
-                        </ul>
-                    </article>
-                    <article>
-                        <h4>Crew - Taking Humans into Space<br />–</h4>
-                        <ul>
-                            <li><strong>Partnership with NASA</strong> – Dragon was designed from the outset to fly humans to space. Under an agreement with NASA, SpaceX is making upgrades to Dragon to allow for crew carrying capability.</li>
-                            <li><strong>Crew Upgrades</strong> – Dragon will be the world’s safest and most reliable crew transport vehicle, with seating for seven, life-support systems, controls with manual capability, and a powered launch escape system.</li>
-                            <li><strong>First Launches</strong> – Upgrades to Dragon are currently in progress. Dragon’s first manned test flight is expected to take place as early as 2018.</li>
-                        </ul>
-                    </article>
-                    <article>
-                        <h4>Dragon Lab - A Free-Flying Microgravity Laboratory<br />–</h4>
-                        <ul>
-                            <li><strong>Facilitating Research</strong> – DragonLab is a free-flying, unmanned platform designed for research and testing in a microgravity environment independent of the International Space Station.</li>
-                            <li><strong>Longevity</strong> – It can transport payloads, experiments, instruments, and sensors into space and back to Earth on missions ranging from one week to two years.</li>
-                            <li><strong>Capabilities</strong> – DragonLab can readily accommodate instrument and sensor testing, space physics and relativity experiments, radiation effects research, and many other microgravity tests.</li>
-                        </ul>
-                    </article>
+                    <!-- Design from "Responsive Contact Form" by Bobby Korec on Codepen. Link: https://codepen.io/bobbykorec/pen/qOGbyr -->
+                    <section id="contact">
+                        <div class="contact-wrapper">
+                        <!-- Left contact page --> 
+                          <form id="contact-form" class="form-horizontal" role="form">
+                            <thead>
+                                <td>
+                                    <h1 class="section-header">Contact</h1>
+                                </td>
+                            </thead>
+                            <div class="form-group">
+                              <div class="col-sm-12">
+                                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="col-sm-12">
+                                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                              </div>
+                            </div>
+                            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                              <div class="alt-send-button">
+                                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                              </div>
+                            </button>
+                          </form>
+                        <!-- Left contact page --> 
+                            <div class="direct-contact-container">
+                              <ul class="contact-list">
+                                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
+                                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+                                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+                              </ul>
+                              <hr>
+                              <ul class="social-media-list">
+                                <li><a href="#" target="_blank" class="contact-icon">
+                                  <i class="fa fa-github" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#" target="_blank" class="contact-icon">
+                                  <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#" target="_blank" class="contact-icon">
+                                  <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#" target="_blank" class="contact-icon">
+                                  <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </li>       
+                              </ul>
+                              <hr>
+                              <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+                            </div>
+                        </div>
+                      </section>
                 </section>
                 <aside role="complementary">
                     <article>
