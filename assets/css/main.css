@@ -152,6 +152,17 @@ aside h6 {
     margin: 0;
 }
 
+#square-summary {
+    border: 1px solid #000;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.steps {
+    list-style-type: lower-alpha;
+    color: black;
+}
+
 /* ---------- footer ---------- */
 
 footer {
@@ -159,7 +170,6 @@ footer {
     font-size: 1.5rem;
     text-align: center;
     border-top: 1px solid #ddd;
-    background-image: url("assets/img/grundge.webp");
 }
 
 footer ul {

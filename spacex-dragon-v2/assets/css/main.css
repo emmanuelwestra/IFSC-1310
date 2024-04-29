@@ -541,186 +541,127 @@ table td:nth-child(even) {
 }
 
 /* ----------
-              Contact Form (Contact Page)
-              Design from "Responsive Contact Form" by Bobby Korec on Codepen.
-              Link: https://codepen.io/bobbykorec/pen/qOGbyr
+              Title: `Contact Us Page Design - Contact Form Design`
+              Author: Ikal Hossain
+              Link: https://codepen.io/indikbal/pen/vYGOmpz
+              Note: I have modified this contact form for my
 ---------- */
 
-#contact {
-  width: 100%;
-  height: 100%;
+.right_contact_social_icon {
+     background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
+}
+.contact_us {
+    background-color: #f1f1f1;
+    padding: 120px 0px;
 }
 
-.section-header {
-  font-size: 1.5rem;
-  color: var(--extra-dark-blue);
-  text-transform: uppercase;
-  letter-spacing: 6px;
+.contact_inner {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 20px 22px 44px #cccc;
+    border-radius: 25px;
+}
+.contact_field {
+    padding: 60px 340px 90px 100px;
+}
+.right_contact_social_icon {
+    height: 100%;
 }
 
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  max-width: 840px;
+.contact_field h3 {
+   color: #000;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+.contact_field p {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+.contact_field .form-control {
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.contact_field .form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid #1325e8;
+}
+.contact_field .form-control::placeholder {
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
-/* Left contact page */
-.form-horizontal {
-  /*float: left;*/
-  max-width: 400px;
-  font-family: 'Lato';
-  font-weight: 400;
+.contact_info_sec {
+    position: absolute;
+    background-color: var(--extra-dark-blue);
+    color: var(--white-color);
+    right: 1px;
+    top: 18%;
+    height: 340px;
+    width: 340px;
+    padding: 40px;
+    border-radius: 25px 0 0 25px;
+}
+.contact_info_sec h4 {
+    letter-spacing: 1px;
+    padding-bottom: 15px;
 }
 
-.form-control, 
-textarea {
-  max-width: 400px;
-  background-color: var(--white-color);
-  color: var(--blue-theme);
-  letter-spacing: 1px;
+.info_single {
+    margin: 30px 0px;
+}
+.info_single i {
+    margin-right: 15px;
+}
+.info_single span {
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
-.send-button {
-  margin-top: 15px;
-  height: 34px;
-  width: 400px;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
+button.contact_form_submit {
+    background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.socil_item_inner li {
+    list-style: none;
+}
+.socil_item_inner li a {
+    color: #fff;
+    margin: 0px 15px;
+    font-size: 14px;
+}
+.socil_item_inner {
+    padding-bottom: 10px;
 }
 
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all .2s ease-in-out;
+.map_sec {
+    padding: 50px 0px;
 }
-
-.send-text {
-  display: block;
-  margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
-  letter-spacing: 2px;
+.map_inner h4, .map_inner p {
+    color: #000;
+    text-align: center
 }
-
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
+.map_inner p {
+    font-size: 13px;
 }
-
-/* Begin Right Contact Page */
-.direct-contact-container {
-  max-width: 400px;
-}
-
-/* Location, Phone, Email Section */
-.contact-list {
-  list-style-type: none;
-  margin-left: -30px;
-  padding-right: 20px;
-}
-
-.list-item {
-  line-height: 4;
-  color: var(--blue-theme);
-  font-size: 0.8rem;
-}
-
-.contact-text {
-  font: 300 18px 'Lato', sans-serif;
-  letter-spacing: 1.9px;
-  color: var(--blue-theme);
-}
-
-.place {
-  margin-left: 62px;
-}
-
-.phone {
-  margin-left: 56px;
-}
-
-.gmail {
-  margin-left: 53px;
-}
-
-.contact-text a {
-  color: var(--blue-theme);
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-
-.contact-text a:hover {
-  text-decoration: underline;
-}
-
-
-/* Social Media Icons */
-.social-media-list {
-  position: relative;
-  font-size: 22px;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.social-media-list li a {
-  color: #fff;
-}
-
-.social-media-list li {
-  position: relative; 
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin: 10px 3px;
-  line-height: 60px;
-  border-radius: 50%;
-  color: #fff;
-  background-color: var(--extra-dark-blue);
-  cursor: pointer; 
-  transition: all .2s ease-in-out;
-}
-
-.social-media-list li:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  opacity: 0;
-  box-shadow: 0 0 0 1px #fff;
-  transition: all .2s ease-in-out;
-}
-
-.social-media-list li:hover {
-  background-color: #fff; 
-}
-
-.social-media-list li:hover:after {
-  opacity: 1;  
-  transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-}
-
-.social-media-list li:hover a {
-  color: #000;
-}
-
-.copyright {
-  font: 200 14px 'Oswald', sans-serif;
-  color: #555;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-hr {
-  border-color: rgba(255,255,255,.6);
+.map_bind {
+   margin-top: 50px;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 /* ---------- Adjustments for medium screens (tablets) ---------- */
