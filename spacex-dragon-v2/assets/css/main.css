@@ -544,13 +544,10 @@ table td:nth-child(even) {
               Title: `Contact Us Page Design - Contact Form Design`
               Author: Ikal Hossain
               Link: https://codepen.io/indikbal/pen/vYGOmpz
-              Note: I have modified this contact form for my
+              Note: I have modified this contact form for my website
 ---------- */
 
-.right_contact_social_icon {
-     background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
-}
-.contact_us {
+.contact {
     background-color: #f1f1f1;
     padding: 120px 0px;
 }
@@ -562,10 +559,7 @@ table td:nth-child(even) {
     border-radius: 25px;
 }
 .contact_field {
-    padding: 60px 340px 90px 100px;
-}
-.right_contact_social_icon {
-    height: 100%;
+    padding: 60px 420px 90px 50px;
 }
 
 .contact_field h3 {
@@ -601,10 +595,10 @@ table td:nth-child(even) {
     position: absolute;
     background-color: var(--extra-dark-blue);
     color: var(--white-color);
-    right: 1px;
+    right: 0px;
     top: 18%;
     height: 340px;
-    width: 340px;
+    width: 30%;
     padding: 40px;
     border-radius: 25px 0 0 25px;
 }
@@ -636,17 +630,6 @@ button.contact_form_submit {
     font-size: 14px;
     letter-spacing: 2px;
 }
-.socil_item_inner li {
-    list-style: none;
-}
-.socil_item_inner li a {
-    color: #fff;
-    margin: 0px 15px;
-    font-size: 14px;
-}
-.socil_item_inner {
-    padding-bottom: 10px;
-}
 
 .map_sec {
     padding: 50px 0px;
@@ -666,13 +649,42 @@ button.contact_form_submit {
 
 /* ---------- Adjustments for medium screens (tablets) ---------- */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block; /* Show hamburger menu on tablets and below */
+  nav[role='navigation'] ul {
+    gap: 25px;
+  }
+
+  /* SpaceX logo img styling */
+  #logo {
+    width: auto;
+    height: 25px;
+  }
+
+  /* Div wrapper for logo */
+  #logo-wrapper {
+    padding-right: 15%;
   }
 
   .hero-section {
     height: 60vh;
     gap: 0;
+  }
+
+  .stats ul li span {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  /* HTML Form */
+  .contact_field {
+    padding: 60px 320px 90px 50px;
+  }
+
+  .contact_info_sec {
+    position: absolute;
+    top: 18%;
+    height: 340px;
+    width: 35%;
+    padding: 30px;
   }
 
   #social h4 {
@@ -695,12 +707,23 @@ button.contact_form_submit {
 
 /* ---------- Adjustments for small screens (phones) ---------- */
 @media (max-width: 480px) {
-  .hamburger {
-    display: block; /* Show hamburger menu on tablets and below */
+  nav[role='navigation'] ul {
+    gap: 10px;
+  }
+
+  /* SpaceX logo img styling */
+  #logo {
+    width: auto;
+    height: 20px;
+  }
+
+  /* Div wrapper for logo */
+  #logo-wrapper {
+    padding-right: 10%;
   }
 
   .hero-section {
-    height: 40vh;
+    height: 80vh;
   }
   
   .stats ul li span {
@@ -710,6 +733,19 @@ button.contact_form_submit {
 
   .stats ul li h6 {
     font-size: 0.6rem;
+  }
+
+  /* HTML Form */
+  .contact_field {
+    padding: 60px 210px 90px 50px;
+  }
+
+  .contact_info_sec {
+    position: absolute;
+    top: 18%;
+    height: 340px;
+    width: 35%;
+    padding: 30px;
   }
 
   #social h4 {
